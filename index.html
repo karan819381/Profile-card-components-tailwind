@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {},
+          },
+          fontFamily: {
+            Kumbh: ["Kumbh Sans", sans - serif],
+          },
+        },
+      };
+    </script>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Profile card component</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body
+    class="w-full h-screen flex items-center justify-center flex-col font-Kumbh"
+    style="
+      background: url('./images/bg-pattern-bottom.svg') bottom -600px right -150px
+          no-repeat,
+        url('./images/bg-pattern-top.svg') top -500px left -200px no-repeat,
+        #19a2ae;
+    "
+  >
+    <main class="w-[25rem] flex flex-col mb-3">
+      <section class="rounded-3xl relative">
+        <img
+          class="w-full rounded-t-2xl"
+          src="./images/bg-pattern-card.svg"
+          alt="pattern card"
+        />
+        <img
+          class="w-[6rem] rounded-full border-4 border-[#fff] absolute z-[999] top-[7rem] left-36"
+          src="./images/image-victor.jpg"
+          alt="profile image"
+        />
+      </section>
+      <section
+        class="w-full h-full bg-[#fff] flex flex-col items-center rounded-b-2xl relative"
+      >
+        <section class="flex mt-20 gap-3 items-center">
+          <h1 class="text-[#2D3248] text-2xl font-bold">Victor Crest</h1>
+          <h2 class="font-semibold text-[#969696] text-xl">26</h2>
+        </section>
+        <section>
+          <h3 class="text-[#969696]">London</h3>
+        </section>
+        <section class="w-full mt-8 border-t-2 border-[#96969] flex justify-between px-16 items-center">
+          <section class="my-5 flex flex flex-col items-center">
+            <section class="text-[#2D3248] text-xl font-bold ">80K</section>
+            <section class="text-[#969696] text-[.7rem] tracking-widest">Followers</section>
+          </section>
+          <section class="my-5 flex flex flex-col items-center">
+            <section class="text-[#2D3248] text-xl font-bold ">803K</section>
+            <section class="text-[#969696] text-[.7rem] tracking-widest ">Likes</section>
+          </section>
+          <section class="my-5 flex flex flex-col items-center">
+            <section class="text-[#2D3248] text-xl font-bold ">1.4K</section>
+            <section class="text-[#969696] text-[.7rem] tracking-widest">Photos</section>
+          </section>
+        </section>
+      </section>
+    </main>
+
+    <footer class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Your Name Here</a>.
+    </footer>
+  </body>
+</html>
